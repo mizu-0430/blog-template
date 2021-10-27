@@ -1,0 +1,301 @@
+# Butterfly
+# 404
+error_404:
+  enable: true
+  subtitle: "页面没有找到"
+  background: 
+# 主题
+theme_color:
+  enable: true
+  # 主色
+  main: "#212121"
+  blockquote_padding_color: "#212121"
+  blockquote_background_color: "#212121"
+  meta_color: "#212121"
+  # 辅色
+  paginator: "#6D9886"
+  button_hover: "#6D9886"
+  link_color: "#6D9886"
+  toc_color: "#6D9886"
+  text_selection: "#6D9886"
+  hr_color: "#6D9886"
+  # 代码
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+# 背景
+background:
+footer_bg: false
+# 打字效果
+activate_power_mode:
+  enable: true
+  colorful: true # open particle animation (冒光特效)
+  shake: true #  open shake (抖动特效)
+  mobile: false
+# 背景特效
+canvas_nest:
+  enable: true
+  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  opacity: 0.7 # the opacity of line (0~1), default: 0.5.
+  zIndex: -1 # z-index property of the background, default: -1.
+  count: 99 # the number of lines, default: 99.
+  mobile: false # false 手机端不显示 true 手机端显示
+# 点击特效
+fireworks:
+  enable: false
+  zIndex: 9999 # -1 or 9999
+  mobile: false
+# 页面美化（标题、列表）
+beautify:
+  enable: false
+  field: site # site/post
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: '#F47466'
+# 全局字体（非必要不要修改）
+font:
+  global-font-size:
+  code-font-size:
+  font-family:
+  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+# LOGO字体
+blog_title_font:
+  font_link:
+  font-family:
+# 副标题
+subtitle:
+  enable: true
+  # 打字效果
+  effect: true
+  # 循环或者只打字一次
+  loop: true
+  # source: 1  调用搏天api的随机语录（简体） 
+  # source: 2  调用一言网的一句话（简体） 
+  # source: 3  调用一句网（简体） 
+  # source: 4  调用今日诗词（简体
+  source: false
+  # 如果有英文逗号' , ',请使用转义字元 &#44;
+  # 如果有英文双引号' " ',请使用转义字元 &quot;
+  # 开头不允许转义字元，如需要，请把整个句子用双引号包住
+  # 例如 "&quotNever put off till tomorrow what you can do today&quot"
+  # 如果关闭打字效果，subtitle只会显示sub的第一行文字
+  sub:
+    - 今日事&#44;今日毕
+    - 常应常静&#44;常清静矣
+# 页面加载动画
+preloader: true
+# 弹窗
+snackbar:
+  enable: true
+  position: top-center
+  bg_light: '#49b1f5' #light mode时弹窗背景
+  bg_dark: '#2d3035' #dark mode时弹窗背景
+# 预加载
+instantpage: true
+# OpenGraph
+Open_Graph_meta: true
+# CSSPrefix
+css_prefix: true
+
+# 菜单
+menu:
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标籤: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  # 清单||fa fa-heartbeat:
+  #   音乐: /music/ || fas fa-music
+  #   照片: /Gallery/ || fas fa-images
+  #   电影: /movies/ || fas fa-video
+  友链: /link/ || fas fa-link
+  # 关于: /about/ || fas fa-heart
+# 代码
+highlight_theme: mac light
+highlight_copy: true
+highlight_shrink: false
+# 社交
+social:
+  fab fa-github: https://github.com/xxxxx || Github
+  fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+# TopImage
+default_top_img: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg9.51tietu.net%2Fpic%2F2019-091222%2Foolq5cgc5zvoolq5cgc5zv.jpg&refer=http%3A%2F%2Fimg9.51tietu.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637826763&t=94e9f2d7ffd8036b12b7ae68889e2e71
+index_img: 
+archive_img: 
+category_img: 
+category_per_img: 
+  Coding: 
+tag_img: 
+tag_per_img: 
+  Java: 
+# 文章封面
+cover:
+  # 是否显示文章封面
+  index_enable: true
+  aside_enable: false
+  archives_enable: true
+  # 封面显示的位置
+  # 三个值可配置 left , right , both
+  position: left
+  default_cover:
+    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+# 文章信息
+post_meta:
+  page:
+    date_type: created # created or updated or both 主页文章日期是创建日或者更新日或都显示
+    date_format: relative # date/relative 显示日期还是相对日期
+    categories: true # true or false 主页是否显示分类
+    tags: true # true or false 主页是否显示标籤
+    label: true # true or false 显示描述性文字
+  post:
+    date_type: both # created or updated or both 文章页日期是创建日或者更新日或都显示
+    date_format: date # date/relative 显示日期还是相对日期
+    categories: true # true or false 文章页是否显示分类
+    tags: true # true or false 文章页是否显示标籤
+    label: true # true or false 显示描述性文字
+# 版权
+post_copyright:
+  enable: true
+  decode: false
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+# 打赏
+reward:
+  enable: false
+  QR_code:
+    - img: /img/wechat.jpg
+      link:
+      text: 微信
+    - img: /img/alipay.jpg
+      link:
+      text: 支付宝
+# TOC
+toc:
+  enable: true
+  number: true
+  style_simple: true
+# 相关文章
+related_post:
+  enable: true
+  limit: 3 # 显示推荐文章数目
+  date_type: created # or created or updated 文章日期显示创建日或者更新日
+# 锚点
+anchor: true
+# 过期
+noticeOutdate:
+  enable: false
+  style: flat # style: simple/flat
+  limit_day: 365 # When will it be shown
+  position: top # position: top/bottom
+  message_prev: It has been
+  message_next: days since the last update, the content of the article may be outdated.
+# 分页 1|2|false
+post_pagination: 2
+# 头像
+avatar:
+  img: /img/avatar.jpg
+  effect: false # 转圈
+# 图片描述
+photofigcaption: true
+# 复制权限
+copy:
+  enable: true
+  copyright:
+    enable: true
+    limit_count: 50
+# Footer
+footer:
+  owner:
+    enable: true
+    since: 2020
+  custom_text: <a href="https://beian.miit.gov.cn/">苏 ICP 备 18065271 号 - 1</a>
+  copyright: false
+# 功能按钮 简繁
+translate:
+  enable: false
+  # 默认按钮显示文字(网站是简体，应设置为'default: 繁')
+  default: 繁
+  #网站默认语言，1: 繁体中文, 2: 简体中文
+  defaultEncoding: 2
+  #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+  translateDelay: 0
+  #当文字是简体时，按钮显示的文字
+  msgToTraditionalChinese: "繁"
+  #当文字是繁体时，按钮显示的文字
+  msgToSimplifiedChinese: "简"
+# 功能按钮 DarkMode
+darkmode:
+  enable: true
+  # dark mode和 light mode切换按钮
+  button: true
+  autoChangeMode: false
+# 功能按钮 ReadMode
+readmode: true
+# 功能按钮 FontSize
+change_font_size: true
+# 侧边栏
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true # display on mobile
+  position: right # left or right
+  card_author:
+    enable: true
+    description: '常应常静，常清静矣。'
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/xxxxxx
+  card_announcement:
+    enable: false
+    content: This is my Blog
+  card_recent_post:
+    enable: true
+    limit: 5 # if set 0 will show all
+    sort: date # date or updated
+    sort_order: # Don't modify the setting unless you know how it works
+  card_categories:
+    enable: true
+    limit: 8 # if set 0 will show all
+    expand: none # none/true/false
+    sort_order: # Don't modify the setting unless you know how it works
+  card_tags:
+    enable: true
+    limit: 40 # if set 0 will show all
+    color: false
+    sort_order: # Don't modify the setting unless you know how it works
+  card_archives:
+    enable: true
+    type: monthly # yearly or monthly
+    format: YYYY年MM月 # eg: YYYY年MM月
+    order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
+    limit: 8 # if set 0 will show all
+    sort_order: # Don't modify the setting unless you know how it works
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    sort_order: # Don't modify the setting unless you know how it works
+# 访问人数
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+# 运行时间
+runtimeshow:
+  enable: true
+  publish_date: 2021/10/24 00:00:00
+# 评论 Aside widget - Newest Comments
+newest_comments:
+  enable: false
+  sort_order: # Don't modify the setting unless you know how it works
+  limit: 6
+  storage: 10 # unit: mins, save data to localStorage
+  avatar: true
+# 分享
+sharejs:
+  enable: true
+  sites: facebook,twitter,wechat,weibo,qq
+# 网站验证
+
+
+
